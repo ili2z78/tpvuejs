@@ -41,4 +41,45 @@ defineEmits(['click'])
   justify-content: center;
   font-size: 0.75rem;
 }
+</style><style scoped>
+.cart-icon {
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+  color: #42b983;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cart-badge:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
 </style>
